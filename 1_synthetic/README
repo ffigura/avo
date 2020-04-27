@@ -1,0 +1,9 @@
+Synthetic test to:
+
+1: Reproduce the Figures 2 and 3 from Gidlow and Smith (1987)
+  1.1: Implement Aki and Richard (1980) and Shuey (1985)
+  
+2: Reproduce the Figure 3 from Chapter 4 in Chopra and Castagna (2014).
+  2.1: Analyse AVO with the implementations in 1.1
+  2.2: Plot RC, wavelet and an offset gather (Normal incidence)
+  2.3: Generate and plot an angle gather from Shuey (1985) 2 terms' approximation
