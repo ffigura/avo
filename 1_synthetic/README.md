@@ -16,3 +16,10 @@
     1.1: Plot reflectivity, crossplot of intercept x gradient, Normal Incidence and Angle gathers
   2: Plot AVO for distinct classes with a model of shale/brine.
     1.1: Plot reflectivity and crossplot of intercept x gradient
+    
+ ## 3_avo_synthetic.ipynb
+
+  1: Plot AVO for distinct classes with a model of shale/gas.
+    1.1: Plot reflectivity, crossplot of intercept x gradient, generate angle gathers
+    1.2: Fit a second order polynomial with L1 and L2 regularization to the angle gather and compute the intercept and gradient
+  2: Add gaussian random noise to the angle gathers and perform 1.2
