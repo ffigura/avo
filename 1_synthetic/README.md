@@ -26,3 +26,9 @@
     
   2: Add gaussian random noise to the angle gathers.\
   &nbsp;&nbsp;&nbsp;2.1: Perform 1.2.
+
+ ## 4_avo_synthetic.ipynb
+
+  1: Compute the elastic impedance (Connolly, 1999) and the normalized elastic impedance (Whitcombe, 2002).\
+  &nbsp;&nbsp;&nbsp;1.1: Plot input logs from 4 AVO scenarios with shale, gas sand and brine sand.\
+  &nbsp;&nbsp;&nbsp;1.2: Plot crossplots with facies defining the thrid dimension.
