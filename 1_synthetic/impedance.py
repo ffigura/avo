@@ -33,19 +33,19 @@ def ei(vp,vs,rho,theta1):
 
     Parameters
     ----------
-    vp : TYPE
-        DESCRIPTION.
-    vs : TYPE
-        DESCRIPTION.
-    rho : TYPE
-        DESCRIPTION.
-    theta1 : TYPE
-        DESCRIPTION.
+    vp : array
+        P-velocity.
+    vs : array
+        S-velocity.
+    rho : array
+        Density.
+    theta1 : float
+        Incidence angle.
 
     Returns
     -------
-    ei : TYPE
-        DESCRIPTION.
+    ei : array
+        Elastic impedance.
 
     """
     theta1 = np.radians(theta1)
@@ -67,25 +67,25 @@ def nei(vp,vs,rho,vp0,vs0,rho0,theta1):
 
     Parameters
     ----------
-    vp : TYPE
-        DESCRIPTION.
-    vs : TYPE
-        DESCRIPTION.
-    rho : TYPE
-        DESCRIPTION.
-    vp0 : TYPE
-        DESCRIPTION.
-    vs0 : TYPE
-        DESCRIPTION.
-    rho0 : TYPE
-        DESCRIPTION.
-    theta1 : TYPE
-        DESCRIPTION.
+    vp : array
+        P-velocity.
+    vs : array
+        S-velocity.
+    rho : array
+        Density.
+    vp0 : float
+        Shale reference P-velocity.
+    vs0 : float
+        Shale reference S-velocity.
+    rho0 : float
+        Shale reference density.
+    theta1 : float
+        Incidence angle.
 
     Returns
     -------
-    eei : TYPE
-        DESCRIPTION.
+    nei : array
+        Normalized elastic impedance.
 
     """
     
@@ -96,6 +96,6 @@ def nei(vp,vs,rho,vp0,vs0,rho0,theta1):
     b = -8*k*np.sin(theta1)**2
     c = 1 - 4*k*np.sin(theta1)**2
     
-    eei = vp0*rho0*((vp/vp0)**a)*((vs/vs0)**b)*((rho/rho0)**c)
+    nei = vp0*rho0*((vp/vp0)**a)*((vs/vs0)**b)*((rho/rho0)**c)
     
-    return (eei)
+    return (nei)
