@@ -29,6 +29,6 @@
 
  ## 4_avo_synthetic.ipynb
 
-  1: Compute the elastic impedance (Connolly, 1999) and the normalized elastic impedance (Whitcombe, 2002).\
+  1: Compute the elastic impedance (Connolly, 1999), the normalized elastic impedance (Whitcombe, 2002) and the LRM (Goodway, 1997).\
   &nbsp;&nbsp;&nbsp;1.1: Plot input logs from 4 AVO scenarios with shale, gas sand and brine sand.\
   &nbsp;&nbsp;&nbsp;1.2: Plot crossplots with facies defining the thrid dimension.
