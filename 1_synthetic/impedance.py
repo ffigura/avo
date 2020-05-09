@@ -29,6 +29,7 @@ def ai(vp,rho):
 
 def ei(vp,vs,rho,theta1):
     """
+    Computes the elasttic impedance.
     Connolly, P., 1999, Elastic impedance: The Leading Edge, 18, 438–452.
 
     Parameters
@@ -62,6 +63,7 @@ def ei(vp,vs,rho,theta1):
 
 def nei(vp,vs,rho,vp0,vs0,rho0,theta1):
     """
+    Computes the normalized elastic impedance.
     Whitcombe, D, 2002, Elastic impedance normalization, Geophysics, 67 (1),
     60–62.
 
@@ -99,3 +101,37 @@ def nei(vp,vs,rho,vp0,vs0,rho0,theta1):
     nei = vp0*rho0*((vp/vp0)**a)*((vs/vs0)**b)*((rho/rho0)**c)
     
     return (nei)
+
+def lrm(vp,vs,rho):
+    """
+    Computes the lamba-rho and mu-rho.
+    Goodway, B., T. Chen, and J. Downton, 1997, Improved AVO fluid detection 
+    and lithology discrimination using Lamé petrophysical parameters; “λρ”, 
+    “μρ”, & “λ/μ fluid stack” from P and S inversions: 67th Annual 
+    International Meeting, SEG, Expanded Abstracts, 183-186.
+
+    Parameters
+    ----------
+    vp : array
+        P-velocity.
+    vs : array
+        S-velocity.
+    rho : array
+        Density.
+
+    Returns
+    -------
+    lambda_rho : array.
+        The product lambda x rho
+    mu_rho : array.
+        The product mu x rho
+
+    """
+    
+    ip = vp*rho
+    ips = vs*rho
+    
+    lambda_rho = ip**2 - 2*ips**2
+    mu_rho = ips**2
+    
+    return(lambda_rho,mu_rho)
