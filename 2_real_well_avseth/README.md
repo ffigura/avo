@@ -1,4 +1,4 @@
-# Real data - angle stack:
+# Real data - well:
 
 ## 0_learning_to_read_real_well_avseth.ipynb
 
