@@ -1,5 +1,4 @@
-# avo
-Study AVO analysis
+# Study AVO analysis
 
 ## [1_synthetic](https://github.com/ffigura/avo/tree/master/1_synthetic)
 
@@ -21,3 +20,7 @@ Study AVO analysis
   - compute attributes from Near and Far stacks
   - compute intercept and gradient 
   - plot and crossplot.    
+
+## [stuff](https://github.com/ffigura/avo/tree/master/stuff)
+
+  - related random stuff
