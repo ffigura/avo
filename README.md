@@ -6,7 +6,8 @@
   - generate new logs 
   - compute reflectivity approximations 
   - plot and crossplot 
-  - generate angle gathers.
+  - generate angle gathers
+  - perform Gassmann fluid substitution.
   
 ## [2_real_well_avseth](https://github.com/ffigura/avo/tree/master/2_real_well_avseth)
 
