@@ -32,3 +32,9 @@
   1: Compute the elastic impedance (Connolly, 1999), the normalized elastic impedance (Whitcombe, 2002) and the LRM (Goodway, 1997).\
   &nbsp;&nbsp;&nbsp;1.1: Plot input logs from 4 AVO scenarios with shale, gas sand and brine sand.\
   &nbsp;&nbsp;&nbsp;1.2: Plot crossplots with facies defining the thrid dimension.
+
+   ## 5_avo_synthetic.ipynb
+
+  1: Reproduce the Figures 5, 7 and 8 from Smith et al. (2003).\
+  &nbsp;&nbsp;&nbsp;1.1: Perform Gassmann fluid substitution from gas sand to brine sand.\
+  &nbsp;&nbsp;&nbsp;1.2: Generate logs, angle gathers, intercept and gradient.
