@@ -20,6 +20,7 @@
 
   - compute attributes from Near and Far stacks
   - compute intercept and gradient 
+  - compute attributes: AVO product, Reflection coefficient difference and Fluid factor
   - plot and crossplot.    
 
 ## [stuff](https://github.com/ffigura/avo/tree/master/stuff)
