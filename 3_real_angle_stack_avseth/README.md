@@ -12,4 +12,4 @@
   
   2: Compute Intercept and Gradient and attributes\  
   &nbsp;&nbsp;&nbsp;2.1: compute and plot the Intercept and Gradient.\  
-  &nbsp;&nbsp;&nbsp;2.2: compute and plot attributes from the Intercept and Gradient.\  
+  &nbsp;&nbsp;&nbsp;2.2: compute and plot attributes from the Intercept and Gradient: AVO product, Reflection coefficient difference and Fluid factor.\  
