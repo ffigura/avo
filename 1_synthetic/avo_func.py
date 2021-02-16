@@ -158,8 +158,10 @@ def shueyrc(vp0, vs0, rho0, theta1):
 
     Returns
     -------
-    R : array
-        Reflection coefficient for the 2-term approximation.    
+    R2 : array
+        Reflection coefficient for the 2-term approximation.  
+    R3 : array
+        Reflection coefficient for the 3-term approximation.        
     R0 : array
         Intercept.
     G : array
@@ -187,12 +189,15 @@ def shueyrc(vp0, vs0, rho0, theta1):
     # Compute two-term reflectivity
     R0 = 0.5 * (dvp/vp + drho/rho)
     G = 0.5 * dvp/vp - 2 * (vs**2/vp**2) * (drho/rho + 2 * dvs/vs)
+    F =  0.5*(dvp/vp)    
 
     term1 = np.outer(R0,1)
     term2 = np.outer(G, np.sin(theta1)**2)
+    term3 = np.outer(F,(np.tan(theta1)**2-np.sin(theta1)**2))
     
-    R = term1 + term2 
-    return (R,R0,G)
+    R2 = term1 + term2
+    R3 = term1 + term2 + term3
+    return (R2,R3,R0,G)
 
 def rickerwave(f = 25, length = 0.512, dt = 0.004):
     """
